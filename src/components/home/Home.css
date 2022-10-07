@@ -1,0 +1,9 @@
+   .home{
+    text-align: center;
+    cursor: pointer;
+    background-image: linear-gradient(to left, rgb(15, 47, 152) , rgb(254, 43, 201));
+
+}
+ul{
+    list-style-type: none;  
+}
