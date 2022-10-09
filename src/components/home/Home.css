@@ -1,9 +1,23 @@
-   .home{
-    text-align: center;
-    cursor: pointer;
+*{
     background-image: linear-gradient(to left, rgb(15, 47, 152) , rgb(254, 43, 201));
+
+}
+.home{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 
 }
 ul{
     list-style-type: none;  
+}
+.text{
+    margin-top: 7%;
+
+}
+h1{
+    margin-bottom: 4%;
+}
+h3{
+    margin-top: 2%;
+    cursor: pointer;
 }

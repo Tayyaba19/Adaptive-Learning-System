@@ -4,9 +4,11 @@ import "./Home.css";
 function Home() {
   return (
     <div className="home">
-        <h1> C Language</h1>
+        
+        <div className='text'>
+           <h1> C Language</h1>
      <div>
-       <h4> C Intorduction </h4>
+      <h3>C Intorduction </h3>
         <ul>
             <li>Keywords and Identifires</li>
             <li>Variables & Identifiers</li>
@@ -15,7 +17,7 @@ function Home() {
         </ul>
      </div>
      <div>
-        <h4>C flow Control</h4>
+        <h3>C flow Control</h3>
         <ul>
             <li>If else</li>
             <li>for Loop</li>
@@ -25,7 +27,7 @@ function Home() {
         </ul>
      </div>
      <div>
-      <h4>C Functions</h4> 
+      <h3>C Functions</h3> 
        <ul>
             <li> Programming Functions</li>
             <li>User Defiend Fuctions</li>
@@ -34,7 +36,7 @@ function Home() {
         </ul>
      </div>
      <div>
-        <h4>C Arrays</h4>
+        <h3>C Arrays</h3>
         <ul>
             <li>Programming Array</li>
             <li>Multi-dimension Array</li>
@@ -42,7 +44,7 @@ function Home() {
         </ul>
      </div>
      <div>
-        <h4>C Pointers</h4>
+        <h3>C Pointers</h3>
         <ul>
             <li>Programming Pointers</li>
             <li>Pointers & Array</li>
@@ -51,7 +53,7 @@ function Home() {
         </ul>
      </div>
      <div>
-       <h4> C Structure</h4>
+       <h3> C Structure</h3>
         <ul>
             <li>C structure</li>
             <li>C struct & Pointers</li>
@@ -59,10 +61,11 @@ function Home() {
         </ul>
      </div>
      <div>
-        <h4>C Files</h4>
+        <h3>C Files</h3>
         <ul>
             <li>Files Input/Output</li>
         </ul>
+     </div>
      </div>
     </div>
   )
