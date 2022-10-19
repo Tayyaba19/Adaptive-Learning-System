@@ -1,23 +1,33 @@
-*{
+/* *{
     background-image: linear-gradient(to left, rgb(15, 47, 152) , rgb(254, 43, 201));
 
-}
+} */
 .home{
+    /* background-image: linear-gradient(to left, rgb(15, 47, 152) , rgb(254, 43, 201)); */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 
 }
-ul{
-    list-style-type: none;  
+.home ul{
+    list-style-type: none; 
+    cursor: pointer;
 }
 .text{
     margin-top: 7%;
 
 }
-h1{
+.home h1{
     margin-bottom: 4%;
 }
-h3{
+.home h3{
     margin-top: 2%;
-    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 1%;
+
+
+}
+.home li{
+    margin-bottom: 15px;
+    /* text-decoration: underline; */
+
 }

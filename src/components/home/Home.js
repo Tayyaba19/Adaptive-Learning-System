@@ -1,7 +1,12 @@
 import React from 'react'
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
+
 
 function Home() {
+
+    const navigate = useNavigate()
+
   return (
     <div className="home">
         
@@ -10,7 +15,7 @@ function Home() {
      <div>
       <h3>C Intorduction </h3>
         <ul>
-            <li>Keywords and Identifires</li>
+            <li onClick={() => navigate('/keywords')}>  Keywords and Identifires </li>
             <li>Variables & Identifiers</li>
             <li>C Data types</li>
             <li>Operators</li>
