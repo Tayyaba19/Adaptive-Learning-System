@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
+import Video from '../video';
 
-
-function Home() {
-
+ function Home(){
+var counter;
     const navigate = useNavigate()
-
+    
   return (
     <div className="home">
         
@@ -15,60 +15,60 @@ function Home() {
      <div>
       <h3>C Intorduction </h3>
         <ul>
-            <li onClick={() => navigate('/keywords')}>  Keywords and Identifires </li>
-            <li>Variables & Identifiers</li>
-            <li>C Data types</li>
-            <li>Operators</li>
+            <li onClick={() => navigate('/video')} counter="1"> Keywords and Identifires </li>
+            <li onClick={() => navigate('/video')} counter="2">Variables & Identifiers</li>
+            <li onClick={() => navigate('/video')} counter="3">C Data types</li>
+            <li onClick={() => navigate('/video')} counter="4">Operators</li>
         </ul>
      </div>
      <div>
         <h3>C flow Control</h3>
         <ul>
-            <li>If else</li>
-            <li>for Loop</li>
-            <li>While Loop</li>
-            <li>Breake & continue & goto </li>
-            <li>Switch Case</li>
+            <li onClick={() => navigate('/video')} counter="5">If else</li>
+            <li  onClick={() => navigate('/video')} counter="6">for Loop</li>
+            <li onClick={() => navigate('/video')} counter="7">While Loop</li>
+            <li onClick={() => navigate('/video')} counter="8">Breake & continue & goto </li>
+            <li onClick={() => navigate('/video')} counter="9">Switch Case</li>
         </ul>
      </div>
      <div>
       <h3>C Functions</h3> 
        <ul>
-            <li> Programming Functions</li>
-            <li>User Defiend Fuctions</li>
-            <li>Function Types</li>
-            <li>Recursion</li>
+            <li onClick={() => navigate('/video')} counter="10"> Programming Functions</li>
+            <li onClick={() => navigate('/video')} counter="11">User Defiend Fuctions</li>
+            <li onClick={() => navigate('/video')} counter="12">Function Types</li>
+            <li onClick={() => navigate('/video')} counter="13">Recursion</li>
         </ul>
      </div>
      <div>
         <h3>C Arrays</h3>
         <ul>
-            <li>Programming Array</li>
-            <li>Multi-dimension Array</li>
-            <li>Array & Function</li>
+            <li onClick={() => navigate('/video')} counter="14">Programming Array</li>
+            <li onClick={() => navigate('/video')} counter="15">Multi-dimension Array</li>
+            <li onClick={() => navigate('/video')} counter="16">Array & Function</li>
         </ul>
      </div>
      <div>
         <h3>C Pointers</h3>
         <ul>
-            <li>Programming Pointers</li>
-            <li>Pointers & Array</li>
-            <li>Pointers & Functions</li>
-            <li>Memory Allocation</li>
+            <li onClick={() => navigate('/video')} counter="17">Programming Pointers</li>
+            <li onClick={() => navigate('/video')} counter="18">Pointers & Array</li>
+            <li onClick={() => navigate('/video')} counter="19">Pointers & Functions</li>
+            <li onClick={() => navigate('/video')} counter="20">Memory Allocation</li>
         </ul>
      </div>
      <div>
        <h3> C Structure</h3>
         <ul>
-            <li>C structure</li>
-            <li>C struct & Pointers</li>
-            <li> C struct & Function</li>
+            <li onClick={() => navigate('/video')} counter="21">C structure</li>
+            <li onClick={() => navigate('/video')} counter="22">C struct & Pointers</li>
+            <li onClick={() => navigate('/video')} counter="23"> C struct & Function</li>
         </ul>
      </div>
      <div>
         <h3>C Files</h3>
         <ul>
-            <li>Files Input/Output</li>
+            <li onClick={() => navigate('/video')} counter="24">Files Input/Output</li>
         </ul>
      </div>
      </div>
