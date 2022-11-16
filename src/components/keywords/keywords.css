@@ -1,17 +1,16 @@
 body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   * {
     font-family: "Verdana", cursive, sans-serif;
-    color: #ffffff;
+    color: #000000;
   }
   
   body {
-    background-color: #7cc6fe;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,9 +18,9 @@ body {
   }
   
   .app {
-    background-color: #252d4a;
-    width: 450px;
-    min-height: 200px;
+    background-color: #ffffff;
+    width: 500px;
+    min-height: 250px;
     height: min-content;
     border-radius: 15px;
     padding: 20px;
@@ -31,7 +30,7 @@ body {
   }
   
   .score-section {
-    display: flex;
+    /* display: flex; */
     font-size: 24px;
     align-items: center;
   }
@@ -39,7 +38,7 @@ body {
   /* QUESTION/TIMER/LEFT SECTION */
   .question-section {
     width: 100%;
-    position: relative;
+    /* position: relative; */
   }
   
   .question-count {
@@ -67,7 +66,7 @@ body {
   /* ANSWERS/RIGHT SECTION */
   .answer-section {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
   }
@@ -76,7 +75,7 @@ body {
     width: 100%;
     font-size: 16px;
     color: #ffffff;
-    background-color: #252d4a;
+    background-color: #ffffff;
     border-radius: 15px;
     display: flex;
     padding: 5px;
