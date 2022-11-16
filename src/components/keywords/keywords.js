@@ -1,45 +1,21 @@
 import React, { useState } from 'react';
 import "./keywords.css";
-export default function Keywords() {
-	const questions = [
-		{
-			questionText: 'How many bytes are reserved by character in c?',
-			answerOptions: [
-				{ answerText: '1', isCorrect: true },
-				{ answerText: '2', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '8', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'What is the process to create increment and decrement statement in C? ',
-			answerOptions: [
-				{ answerText: '- , +', isCorrect: false },
-				{ answerText: '++ , --', isCorrect: true },
-				{ answerText: 'both a and b', isCorrect: false },
-				{ answerText: 'none of the', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'printf ("Result is = %d ", (24 / 5) * 5.0);',
-			answerOptions: [
-				{ answerText: '20.000000', isCorrect: true },
-				{ answerText: '20', isCorrect: false },
-				{ answerText: 'runtime error', isCorrect: false },
-				{ answerText: '0', isCorrect: false },
-			],
-		},
-	];
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate, useParams } from 'react-router-dom';
 
+
+export default function Keywords({questions})
+ {
+   const navigate= useNavigate();
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
+	let { id } = useParams();
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
 			setScore(score + 1);
 		}
-
 		const nextQuestion = currentQuestion + 1;
 		if (nextQuestion < questions.length) {
 			setCurrentQuestion(nextQuestion);
@@ -52,7 +28,9 @@ export default function Keywords() {
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
+					<button onClick={() => navigate(`/video/${++id}`)}> next topic: </button>
 				</div>
+
 			) : (
 				<>
 					<div className='question-section'>
@@ -64,10 +42,12 @@ export default function Keywords() {
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOption) => (
 							<button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
-						))}
+						))
+						}
 					</div>
 				</>
-			)}
+			)
+			}
 		</div>
 	);
 }
