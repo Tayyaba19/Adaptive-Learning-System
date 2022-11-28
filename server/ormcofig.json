@@ -1,0 +1,10 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": "*",
+    "username": "root",
+    "password": "",
+    "database": "assement",
+    "entities": ["src/**/**.entity{.ts,.js}"],
+    "synchronize": true
+  }
