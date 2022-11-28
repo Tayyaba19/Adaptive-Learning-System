@@ -47,5 +47,8 @@
   "devDependencies": {
     "@types/bootstrap": "^5.2.5",
     "@types/react-bootstrap": "^0.32.31"
-  }
+  },
+  "overrides": {
+    "autoprefixer": "10.4.5"
+}
 }

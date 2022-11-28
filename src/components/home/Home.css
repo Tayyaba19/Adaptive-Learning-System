@@ -28,6 +28,8 @@
 }
 .home li{
     margin-bottom: 15px;
+    list-style: none;
+    cursor: pointer;
     /* text-decoration: underline; */
 
 }

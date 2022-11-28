@@ -1,7 +1,7 @@
 import React from 'react'
 import './video.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container} from 'react-bootstrap'
+// import {Container} from 'react-bootstrap'
 import { useNavigate, useParams } from 'react-router-dom';
 
 
@@ -16,7 +16,7 @@ import { useNavigate, useParams } from 'react-router-dom';
   {
      id :  0,
      name : "Introduction to C ",
-     description : "keywords ,veriables & Indentifiers ",
+     description : "keywords ,variables & Indentifiers ",
      videoUrl : "https://www.youtube.com/embed/KnvbUiSxvbM"
   },
   {
@@ -144,10 +144,10 @@ import { useNavigate, useParams } from 'react-router-dom';
          <div>
             <span>{data.language[id].name}:</span>
             <h3> {data.language[id].description}</h3>
-            <Container>           
+            {/* <Container>            */}
             <iframe width="560" height="315" src={data.language[id].videoUrl} title="YouTube video player" frameBorder="0" allowFullScreen="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-            </Container>
-            <button onClick={() => navigate(`/keywords/${id}`)}>take a test</button>
+            {/* </Container> */}
+            <button onClick={() => navigate(`/quiz/${id}`)}>take a test</button>
          </div>
     )
  }
